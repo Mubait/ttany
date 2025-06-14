@@ -2,12 +2,15 @@
 @import "./1440/header1440";
 @import "./375/header375";
 
+@import "./1920/menu-and-products1920";
+@import "./1440/menu-and-products1440";
+@import "./375/menu-and-products375";
 
 html {
     max-width: 100%;
 }
 
-@mixin body {
+@mixin bodymxn {
     display: flex;
     flex-direction: column;
     padding-right: 100px;
@@ -18,21 +21,21 @@ html {
 
 @media (max-width: 1920px) {
     body {
-        @include body;
+        @include bodymxn;
         max-width: 1920px;
         height: fit-content;
     }
 }
 @media (max-width: 1440px) {
     body {
-        @include body;
+        @include bodymxn;
         max-width: 1440px;
         height: fit-content;
     }
 }
 @media (max-width: 375px) {
     body {
-        @include body;
+        @include bodymxn;
         max-width: 375px;
         height: 800px;
         padding-right: 0;
