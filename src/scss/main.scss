@@ -1,15 +1,39 @@
-@import "./_headerMainPg";
+@import "./1920/_headerMainPg1920";
+@import "./1440/headerMainPg1440";
+
+
 
 html {
     max-width: 100%;
 }
-body {
+
+@mixin body {
     display: flex;
     flex-direction: column;
-    max-width: 1920px;
-    height: fit-content;
     padding-right: 100px;
     padding-bottom: 36px;
     padding-left: 100px;
     gap: 24px;
+}
+
+@media (max-width: 1920px) {
+    body {
+        @include body;
+        max-width: 1920px;
+        height: fit-content;
+    }
+}
+@media (max-width: 1440px) {
+    body {
+        @include body;
+        max-width: 1440px;
+        height: fit-content;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        @include body;
+        max-width: 375px;
+        height: 800px;
+    }
 }

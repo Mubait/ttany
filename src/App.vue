@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HeaderMainPg/>
+    <HeaderMain/>
   </div>
 </template>
 
 <script>
-import HeaderMainPg from './components/HeaderMainPg.vue'
+import HeaderMain from './components/HeaderMain.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderMainPg
+    HeaderMain
   }
 }
 </script>
