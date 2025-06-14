@@ -1,8 +1,14 @@
 <template>
     <div class="main-block">
         <ProductFilter/>
+
+        <div>
+      
+        </div>
+
     </div>
 
+    
 </template>
 
 <script>
