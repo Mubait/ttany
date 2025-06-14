@@ -1,21 +1,9 @@
 <template>
     <div class="filter">
         <div class="category-filter">
-            <div class="category-1"> 
-                <p class="category-1-name"> Название категории </p>
-                <p class="category-1-amount"> 3 </p>
-            </div>
-            <div class="category-2"> 
-                <p class="category-2-name"> Название категории </p>
-                <p class="category-2-amount"> 3 </p>
-            </div>
-            <div class="category-3"> 
-                <p class="category-3-name"> Название категории </p>
-                <p class="category-3-amount"> 3 </p>
-            </div>
-            <div class="category-4"> 
-                <p class="category-4-name"> Название категории </p>
-                <p class="category-4-amount"> 3 </p>
+            <div :class="`category-${i}`" v-for="i in 4" :key="i"> 
+                <p :class="`category-${i}-name`"> Название категории </p>
+                <p :class="`category-${i}-amount`"> 3 </p>
             </div>
         </div>
 
