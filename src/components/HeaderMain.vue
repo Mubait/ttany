@@ -24,15 +24,5 @@
             <p class="contacts"> Контакты </p>
             <p class="useful-links"> Полезные ссылки </p>
         </div>
-
-        <!-- <img class="autocomplete" src="/public/mobile/autocomplete.svg" alt="logo">
-        <div class="product-search-wrap-mobile">
-            <input class="product-search" type="text" placeholder="Поиск по ? товаров"/>
-            <button class="search-btn"> Найти </button>
-        </div>
-
-        <p class="about-of-company">Информация о компании</p>
-        <p class="contacts">Контакты</p>
-        <p class="useful-links">Полезные ссылки</p> -->
     </header>
 </template>
