@@ -28,24 +28,28 @@
         <!--  -->
 
         <!-- 375 -->
-         <div class="frame-1081">
-            <div class="search-form">
-                <div class="input-form-wrapper">
-                    <div class="frame-1140">
-                        <img class="arrow-back" src="/mobile/arrow-back.svg" alt="arrow-back">
-                        <input class="input-form" type="text" placeholder="Запрос"/>
-                        <img class="cross" src="/mobile/cross.svg" alt="cross">
-                        <div class="search-btn"> <p class="search-txt"> Найти </p> </div>
-                    </div>
-                    <div class="frame-1141">
+         
+            <div class="frame-1081">
+                <div class="search-form">
+                    <div class="input-form-wrapper">
+                        <div class="frame-1140">
+                            <img class="arrow-back" src="/mobile/arrow-back.svg" alt="arrow-back">
+                            <input class="input-form" type="text" placeholder="Запрос"/>
+                            <img class="cross" src="/mobile/cross.svg" alt="cross">
+                            <div class="search-btn"> <p class="search-txt"> Найти </p> </div>
+                        </div>
+                        <div class="frame-1141">
 
+                        </div>
                     </div>
                 </div>
             </div>
-         </div>
-         <!-- <div class="frame-1094">
+            <div class="frame-1094">
+                <p class="frame-1094-category-name"> Название категории </p>
+            </div>
+         
 
-         </div> -->
+
 
     </header>
 </template>

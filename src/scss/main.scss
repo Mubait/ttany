@@ -3,8 +3,8 @@
 @import "./375/header375";
 
 @import "./1920/menu-and-products1920";
-@import "./1440/menu-and-products1440";
 @import "./375/menu-and-products375";
+
 
 html {
     max-width: 100%;
@@ -37,7 +37,7 @@ html {
     body {
         @include bodymxn;
         max-width: 375px;
-        height: 800px;
+        max-height: 800px;
         padding-right: 0;
         padding-bottom: 0;
         padding-left: 0;
