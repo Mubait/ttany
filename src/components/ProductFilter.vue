@@ -1,10 +1,12 @@
 <template>
     <div class="filter">
         <div class="category-filter">
-            <div :class="`category-${i}`" v-for="i in 4" :key="i"> 
-                <p :class="`category-${i}-name`"> Название категории </p>
+            <div :class="`category-${i}`" v-for="i in 4" :key="i" tabindex="0">
+                <div class="filter-back"></div>
+                <p :class="`category-${i}-name`"> {{ categoryArr[i-1] }} </p>
                 <p :class="`category-${i}-amount`"> 3 </p>
             </div>
+
         </div>
 
         <div class="slider-filter">
@@ -62,3 +64,13 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            categoryArr: new Array(4).fill("Название категории")
+        }
+    }
+}
+</script>

@@ -523,6 +523,8 @@
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
+    outline: 0;
+    border: 0;
   }
   .main-block .filter .category-filter .category-1 {
     display: flex;
@@ -530,9 +532,26 @@
     height: 30px;
     justify-content: space-between;
     margin: 0;
-    border: 0;
+    border-radius: 8px;
     padding-right: 16px;
     padding-left: 8px;
+    align-items: center;
+  }
+  .main-block .filter .category-filter .category-1:focus .filter-back {
+    display: flex;
+  }
+  .main-block .filter .category-filter .category-1:focus .category-1-name {
+    color: #7397F5;
+  }
+  .main-block .filter .category-filter .category-1:hover {
+    cursor: pointer;
+    background-color: #E2EFFF;
+  }
+  .main-block .filter .category-filter .category-1 .filter-back {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("/common/other/filter-back.svg");
   }
   .main-block .filter .category-filter .category-1 .category-1-name {
     width: 124px;
@@ -566,9 +585,26 @@
     height: 30px;
     justify-content: space-between;
     margin: 0;
-    border: 0;
+    border-radius: 8px;
     padding-right: 16px;
     padding-left: 8px;
+    align-items: center;
+  }
+  .main-block .filter .category-filter .category-2:focus .filter-back {
+    display: flex;
+  }
+  .main-block .filter .category-filter .category-2:hover {
+    cursor: pointer;
+    background-color: #E2EFFF;
+  }
+  .main-block .filter .category-filter .category-2:focus .category-2-name {
+    color: #7397F5;
+  }
+  .main-block .filter .category-filter .category-2 .filter-back {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("/common/other/filter-back.svg");
   }
   .main-block .filter .category-filter .category-2 .category-2-name {
     width: 124px;
@@ -602,9 +638,26 @@
     height: 30px;
     justify-content: space-between;
     margin: 0;
-    border: 0;
+    border-radius: 8px;
     padding-right: 16px;
     padding-left: 8px;
+    align-items: center;
+  }
+  .main-block .filter .category-filter .category-3:focus .filter-back {
+    display: flex;
+  }
+  .main-block .filter .category-filter .category-3:hover {
+    cursor: pointer;
+    background-color: #E2EFFF;
+  }
+  .main-block .filter .category-filter .category-3:focus .category-3-name {
+    color: #7397F5;
+  }
+  .main-block .filter .category-filter .category-3 .filter-back {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("/common/other/filter-back.svg");
   }
   .main-block .filter .category-filter .category-3 .category-3-name {
     width: 124px;
@@ -638,9 +691,26 @@
     height: 30px;
     justify-content: space-between;
     margin: 0;
-    border: 0;
+    border-radius: 8px;
     padding-right: 16px;
     padding-left: 8px;
+    align-items: center;
+  }
+  .main-block .filter .category-filter .category-4:focus .filter-back {
+    display: flex;
+  }
+  .main-block .filter .category-filter .category-4:hover {
+    cursor: pointer;
+    background-color: #E2EFFF;
+  }
+  .main-block .filter .category-filter .category-4:focus .category-4-name {
+    color: #7397F5;
+  }
+  .main-block .filter .category-filter .category-4 .filter-back {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("/common/other/filter-back.svg");
   }
   .main-block .filter .category-filter .category-4 .category-4-name {
     width: 124px;
@@ -723,6 +793,10 @@
     align-items: center;
     box-sizing: border-box;
   }
+  .main-block .filter .slider-filter .frame-1066 .price-from:hover {
+    border: 1px solid #125BAE;
+    cursor: pointer;
+  }
   .main-block .filter .slider-filter .frame-1066 .price-from .price-from-txt {
     width: 12px;
     height: 14px;
@@ -763,6 +837,10 @@
     margin: 0;
     align-items: center;
     box-sizing: border-box;
+  }
+  .main-block .filter .slider-filter .frame-1066 .price-to:hover {
+    border: 1px solid #125BAE;
+    cursor: pointer;
   }
   .main-block .filter .slider-filter .frame-1066 .price-to .price-to-txt {
     width: 12px;
@@ -827,11 +905,14 @@
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0;
-    color: #333333;
     text-align: right;
     text-decoration: underline;
     color: #AAAAAA;
     margin: 0;
+  }
+  .main-block .filter .checkbox-filter-1 .checkbox-filter-1-category-header .checkbox-filter-1-clear-txt:hover {
+    cursor: pointer;
+    color: #333333;
   }
   .main-block .filter .checkbox-filter-1 .checkbox-filter-1-search-input-wrapper {
     display: flex;
@@ -843,6 +924,10 @@
     padding: 10px 12px;
     gap: 8px;
     margin: 0;
+  }
+  .main-block .filter .checkbox-filter-1 .checkbox-filter-1-search-input-wrapper:hover {
+    cursor: pointer;
+    border: 1px solid #125BAE;
   }
   .main-block .filter .checkbox-filter-1 .checkbox-filter-1-search-input-wrapper .frame-1059 {
     display: flex;
@@ -911,6 +996,11 @@
     border-radius: 3px;
     border: 1px solid #7397F5;
     background-color: #7397F5;
+    margin: 0;
+  }
+  .main-block .filter .checkbox-filter-1 .frame-1152 .frame-1152-checkbox-wrapper .frame-1049 .frame-1049-checkbox:hover {
+    cursor: pointer;
+    border: 1px solid #125BAE;
   }
   .main-block .filter .checkbox-filter-1 .frame-1152 .frame-1152-checkbox-wrapper .frame-1049 .frame-1049-checkbox-name {
     width: 49px;
@@ -1004,6 +1094,11 @@
     border-radius: 3px;
     border: 1px solid #7397F5;
     background-color: #7397F5;
+    margin: 0;
+  }
+  .main-block .filter .checkbox-filter-2 .frame-1252 .frame-1252-checkbox-wrapper .frame-1149 .frame-1149-checkbox:hover {
+    cursor: pointer;
+    border: 1px solid #125BAE;
   }
   .main-block .filter .checkbox-filter-2 .frame-1252 .frame-1252-checkbox-wrapper .frame-1149 .frame-1149-checkbox-name {
     width: 49px;
@@ -1171,6 +1266,8 @@
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
+    outline: 0;
+    border: 0;
   }
   .main-block .filter .category-filter .category-1 {
     display: flex;
@@ -1178,9 +1275,26 @@
     height: 30px;
     justify-content: space-between;
     margin: 0;
-    border: 0;
+    border-radius: 8px;
     padding-right: 16px;
     padding-left: 8px;
+    align-items: center;
+  }
+  .main-block .filter .category-filter .category-1:focus .filter-back {
+    display: flex;
+  }
+  .main-block .filter .category-filter .category-1:focus .category-1-name {
+    color: #7397F5;
+  }
+  .main-block .filter .category-filter .category-1:hover {
+    cursor: pointer;
+    background-color: #E2EFFF;
+  }
+  .main-block .filter .category-filter .category-1 .filter-back {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("/common/other/filter-back.svg");
   }
   .main-block .filter .category-filter .category-1 .category-1-name {
     width: 124px;
@@ -1214,9 +1328,26 @@
     height: 30px;
     justify-content: space-between;
     margin: 0;
-    border: 0;
+    border-radius: 8px;
     padding-right: 16px;
     padding-left: 8px;
+    align-items: center;
+  }
+  .main-block .filter .category-filter .category-2:focus .filter-back {
+    display: flex;
+  }
+  .main-block .filter .category-filter .category-2:hover {
+    cursor: pointer;
+    background-color: #E2EFFF;
+  }
+  .main-block .filter .category-filter .category-2:focus .category-2-name {
+    color: #7397F5;
+  }
+  .main-block .filter .category-filter .category-2 .filter-back {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("/common/other/filter-back.svg");
   }
   .main-block .filter .category-filter .category-2 .category-2-name {
     width: 124px;
@@ -1250,9 +1381,26 @@
     height: 30px;
     justify-content: space-between;
     margin: 0;
-    border: 0;
+    border-radius: 8px;
     padding-right: 16px;
     padding-left: 8px;
+    align-items: center;
+  }
+  .main-block .filter .category-filter .category-3:focus .filter-back {
+    display: flex;
+  }
+  .main-block .filter .category-filter .category-3:hover {
+    cursor: pointer;
+    background-color: #E2EFFF;
+  }
+  .main-block .filter .category-filter .category-3:focus .category-3-name {
+    color: #7397F5;
+  }
+  .main-block .filter .category-filter .category-3 .filter-back {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("/common/other/filter-back.svg");
   }
   .main-block .filter .category-filter .category-3 .category-3-name {
     width: 124px;
@@ -1286,9 +1434,26 @@
     height: 30px;
     justify-content: space-between;
     margin: 0;
-    border: 0;
+    border-radius: 8px;
     padding-right: 16px;
     padding-left: 8px;
+    align-items: center;
+  }
+  .main-block .filter .category-filter .category-4:focus .filter-back {
+    display: flex;
+  }
+  .main-block .filter .category-filter .category-4:hover {
+    cursor: pointer;
+    background-color: #E2EFFF;
+  }
+  .main-block .filter .category-filter .category-4:focus .category-4-name {
+    color: #7397F5;
+  }
+  .main-block .filter .category-filter .category-4 .filter-back {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("/common/other/filter-back.svg");
   }
   .main-block .filter .category-filter .category-4 .category-4-name {
     width: 124px;
@@ -1371,6 +1536,10 @@
     align-items: center;
     box-sizing: border-box;
   }
+  .main-block .filter .slider-filter .frame-1066 .price-from:hover {
+    border: 1px solid #125BAE;
+    cursor: pointer;
+  }
   .main-block .filter .slider-filter .frame-1066 .price-from .price-from-txt {
     width: 12px;
     height: 14px;
@@ -1411,6 +1580,10 @@
     margin: 0;
     align-items: center;
     box-sizing: border-box;
+  }
+  .main-block .filter .slider-filter .frame-1066 .price-to:hover {
+    border: 1px solid #125BAE;
+    cursor: pointer;
   }
   .main-block .filter .slider-filter .frame-1066 .price-to .price-to-txt {
     width: 12px;
@@ -1475,11 +1648,14 @@
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0;
-    color: #333333;
     text-align: right;
     text-decoration: underline;
     color: #AAAAAA;
     margin: 0;
+  }
+  .main-block .filter .checkbox-filter-1 .checkbox-filter-1-category-header .checkbox-filter-1-clear-txt:hover {
+    cursor: pointer;
+    color: #333333;
   }
   .main-block .filter .checkbox-filter-1 .checkbox-filter-1-search-input-wrapper {
     display: flex;
@@ -1491,6 +1667,10 @@
     padding: 10px 12px;
     gap: 8px;
     margin: 0;
+  }
+  .main-block .filter .checkbox-filter-1 .checkbox-filter-1-search-input-wrapper:hover {
+    cursor: pointer;
+    border: 1px solid #125BAE;
   }
   .main-block .filter .checkbox-filter-1 .checkbox-filter-1-search-input-wrapper .frame-1059 {
     display: flex;
@@ -1559,6 +1739,11 @@
     border-radius: 3px;
     border: 1px solid #7397F5;
     background-color: #7397F5;
+    margin: 0;
+  }
+  .main-block .filter .checkbox-filter-1 .frame-1152 .frame-1152-checkbox-wrapper .frame-1049 .frame-1049-checkbox:hover {
+    cursor: pointer;
+    border: 1px solid #125BAE;
   }
   .main-block .filter .checkbox-filter-1 .frame-1152 .frame-1152-checkbox-wrapper .frame-1049 .frame-1049-checkbox-name {
     width: 49px;
@@ -1652,6 +1837,11 @@
     border-radius: 3px;
     border: 1px solid #7397F5;
     background-color: #7397F5;
+    margin: 0;
+  }
+  .main-block .filter .checkbox-filter-2 .frame-1252 .frame-1252-checkbox-wrapper .frame-1149 .frame-1149-checkbox:hover {
+    cursor: pointer;
+    border: 1px solid #125BAE;
   }
   .main-block .filter .checkbox-filter-2 .frame-1252 .frame-1252-checkbox-wrapper .frame-1149 .frame-1149-checkbox-name {
     width: 49px;

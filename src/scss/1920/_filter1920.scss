@@ -14,15 +14,36 @@
             flex-direction: column;
             width: 100%;
             height: fit-content;
+            outline: 0;
+            border: 0;
             .category-1 {
                 display: flex;
                 max-width: 100%;
                 height: 30px;
                 justify-content: space-between;
                 margin: 0;
-                border: 0;
+                border-radius: 8px;
                 padding-right: 16px;
                 padding-left: 8px;
+                align-items: center;
+                &:focus {
+                    .filter-back {
+                        display: flex;
+                    }
+                    .category-1-name {
+                        color: $--color-brand;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: $--color-font-bg;
+                }
+                .filter-back {
+                    display: none;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url("/common/other/filter-back.svg");
+                }
                 .category-1-name {
                     width: 124px;
                     height: 16px;
@@ -34,7 +55,7 @@
                     border: 0;
                     margin: 0;
                     padding: 0;
-                    color: $--color-font-main
+                    color: $--color-font-main;
                 }
                 .category-1-amount {
                     width: 7px;
@@ -56,9 +77,26 @@
                 height: 30px;
                 justify-content: space-between;
                 margin: 0;
-                border: 0;
+                border-radius: 8px;
                 padding-right: 16px;
                 padding-left: 8px;
+                align-items: center;
+                &:focus .filter-back {
+                    display: flex;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: $--color-font-bg;
+                }
+                &:focus .category-2-name {
+                    color: $--color-brand;
+                }
+                .filter-back {
+                    display: none;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url("/common/other/filter-back.svg");
+                }
                 .category-2-name {
                     width: 124px;
                     height: 16px;
@@ -92,9 +130,26 @@
                 height: 30px;
                 justify-content: space-between;
                 margin: 0;
-                border: 0;
+                border-radius: 8px;
                 padding-right: 16px;
                 padding-left: 8px;
+                align-items: center;
+                &:focus .filter-back {
+                    display: flex;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: $--color-font-bg;
+                }
+                &:focus .category-3-name {
+                    color: $--color-brand;
+                }
+                .filter-back {
+                    display: none;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url("/common/other/filter-back.svg");
+                }
                 .category-3-name {
                     width: 124px;
                     height: 16px;
@@ -128,9 +183,26 @@
                 height: 30px;
                 justify-content: space-between;
                 margin: 0;
-                border: 0;
+                border-radius: 8px;
                 padding-right: 16px;
                 padding-left: 8px;
+                align-items: center;
+                &:focus .filter-back {
+                    display: flex;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: $--color-font-bg;
+                }
+                &:focus .category-4-name {
+                    color: $--color-brand;
+                }
+                .filter-back {
+                    display: none;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url("/common/other/filter-back.svg");
+                }
                 .category-4-name {
                     width: 124px;
                     height: 16px;
@@ -208,6 +280,10 @@
                     margin: 0;
                     align-items: center;
                     box-sizing: border-box;
+                    &:hover {
+                        border: 1px solid $--color-font-hover;
+                        cursor: pointer;
+                    }
                     .price-from-txt {
                         width: 12px;
                         height: 14px;
@@ -249,6 +325,10 @@
                     margin: 0;
                     align-items: center;
                     box-sizing: border-box;
+                    &:hover {
+                        border: 1px solid $--color-font-hover;
+                        cursor: pointer;
+                    }
                     .price-to-txt {
                         width: 12px;
                         height: 14px;
@@ -311,11 +391,14 @@
                     font-size: 12px;
                     line-height: 12px;
                     letter-spacing: 0;
-                    color: $--color-font-main;
                     text-align: right;
                     text-decoration: underline;
                     color: $--color-font-second;
                     margin: 0;
+                    &:hover {
+                        cursor: pointer;      
+                        color: $--color-font-main; 
+                    }
                 }
             }
             .checkbox-filter-1-search-input-wrapper {
@@ -327,6 +410,10 @@
                 padding: 10px 12px;
                 gap: 8px;
                 margin: 0;
+                &:hover {
+                    cursor: pointer;
+                    border: 1px solid $--color-font-hover;
+                }
                 .frame-1059 {
                     display: flex;
                     width: 100%;
@@ -364,7 +451,6 @@
                 overflow-y: auto;
                 scrollbar-width: thin;
                 scrollbar-color: $--scroll-bar transparent; 
-                // overflow-x: hidden;
                 gap: 12px;
                 margin: 0;
                 border: 0;
@@ -390,6 +476,11 @@
                             border-radius: 3px;
                             border: 1px solid $--color-brand;
                             background-color: $--color-brand;
+                            margin: 0;
+                            &:hover {
+                                cursor: pointer;
+                                border: 1px solid $--color-font-hover;
+                            }
                         }
                         .frame-1049-checkbox-name {
                             width: 49px;
@@ -480,6 +571,11 @@
                             border-radius: 3px;
                             border: 1px solid $--color-brand;
                             background-color: $--color-brand;
+                            margin: 0;
+                            &:hover {
+                                cursor: pointer;
+                                border: 1px solid $--color-font-hover;
+                            }
                         }
                         .frame-1149-checkbox-name {
                             width: 49px;
