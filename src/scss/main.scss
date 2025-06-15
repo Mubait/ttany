@@ -1,0 +1,47 @@
+@import "./1920/_header1920";
+@import "./1440/header1440";
+@import "./375/header375";
+
+@import "./1920/main-block1920";
+@import "./1440/main-block1440";
+@import "./375/main-block375";
+
+
+html {
+    max-width: 100%;
+}
+
+@mixin bodymxn {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-bottom: 36px;
+    padding-left: 100px;
+    gap: 24px;
+}
+
+@media (max-width: 1920px) {
+    body {
+        @include bodymxn;
+        max-width: 1920px;
+        height: fit-content;
+    }
+}
+@media (max-width: 1440px) {
+    body {
+        @include bodymxn;
+        max-width: 1440px;
+        height: fit-content;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        @include bodymxn;
+        max-width: 375px;
+        height: 800px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin: 0;
+    }
+}
