@@ -218,7 +218,7 @@
                         letter-spacing: 0;
                     }
                     .price-from-input {
-                        width: 46px;
+                        width: 100%;
                         height: 16px;
                         font-family: PT Sans;
                         font-weight: 400;
@@ -228,6 +228,7 @@
                         margin: 0;
                         padding: 0;
                         border: 0;
+                        outline: none;
                     }
                 }
                 .divider {
@@ -258,7 +259,7 @@
                         letter-spacing: 0;
                     }
                     .price-to-input {
-                        width: 46px;
+                        width: 100%;
                         height: 16px;
                         font-family: PT Sans;
                         font-weight: 400;
@@ -268,6 +269,7 @@
                         margin: 0;
                         padding: 0;
                         border: 0;
+                        outline: none;
                     }
                 }
             }

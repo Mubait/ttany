@@ -668,7 +668,7 @@
     letter-spacing: 0;
   }
   .main-block .filter .slider-filter .frame-1066 .price-from .price-from-input {
-    width: 46px;
+    width: 100%;
     height: 16px;
     font-family: PT Sans;
     font-weight: 400;
@@ -678,6 +678,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    outline: none;
   }
   .main-block .filter .slider-filter .frame-1066 .divider {
     width: 10px;
@@ -708,7 +709,7 @@
     letter-spacing: 0;
   }
   .main-block .filter .slider-filter .frame-1066 .price-to .price-to-input {
-    width: 46px;
+    width: 100%;
     height: 16px;
     font-family: PT Sans;
     font-weight: 400;
@@ -718,6 +719,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    outline: none;
   }
   .main-block .filter .checkbox-filter-1 {
     display: flex;
@@ -1314,7 +1316,7 @@
     letter-spacing: 0;
   }
   .main-block .filter .slider-filter .frame-1066 .price-from .price-from-input {
-    width: 46px;
+    width: 100%;
     height: 16px;
     font-family: PT Sans;
     font-weight: 400;
@@ -1324,6 +1326,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    outline: none;
   }
   .main-block .filter .slider-filter .frame-1066 .divider {
     width: 10px;
@@ -1354,7 +1357,7 @@
     letter-spacing: 0;
   }
   .main-block .filter .slider-filter .frame-1066 .price-to .price-to-input {
-    width: 46px;
+    width: 100%;
     height: 16px;
     font-family: PT Sans;
     font-weight: 400;
@@ -1364,6 +1367,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    outline: none;
   }
   .main-block .filter .checkbox-filter-1 {
     display: flex;
