@@ -1,8 +1,8 @@
 @import "../variables";
-@import "./filter1920";
-@import "./products1920";
+@import "./filter1440";
+@import "./products1440";
 
-@media (max-width: 1920px) {
+@media (max-width: 1440px) {
     .main-block {
         display: flex;
         width: 100%;

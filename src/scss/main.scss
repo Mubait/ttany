@@ -3,7 +3,8 @@
 @import "./375/header375";
 
 @import "./1920/main-block1920";
-@import "./375/filter375";
+@import "./1440/main-block1440";
+@import "./375/main-block375";
 
 
 html {
@@ -37,7 +38,7 @@ html {
     body {
         @include bodymxn;
         max-width: 375px;
-        max-height: 800px;
+        height: 800px;
         padding-right: 0;
         padding-bottom: 0;
         padding-left: 0;

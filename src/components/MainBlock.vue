@@ -2,8 +2,24 @@
     <div class="main-block">
         <ProductFilter/>
 
-        <div>
-      
+        <div class="products-grid">
+          <div class="products-grid-product" v-for="i in 12" :key="i">
+            <div class="products-grid-product-img"></div>
+            
+            <div class="products-grid-product-labels">
+              <p class="products-grid-product-brand-txt"> Бренд </p>
+              <p class="products-grid-product-name-txt"> Полное название товара в несколько строк для вида с обрывом в конце. </p>
+            </div>
+
+            <div class="products-grid-product-price">
+              <p class="products-grid-product-price-currentprice"> 5 990 ₽ </p>
+              <p class="products-grid-product-price-oldprice"> 5 990 ₽ </p>
+            </div>
+
+            <div class="products-grid-product-buybtn">
+              <p class="products-grid-product-buybtn-txt"> Купить </p>
+            </div>
+          </div>
         </div>
 
     </div>
