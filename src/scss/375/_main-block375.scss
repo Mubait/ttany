@@ -1,0 +1,18 @@
+@import "../variables";
+@import "./filter375";
+@import "./products375";
+
+@media (max-width: 375px) {
+    .main-block {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: fit-content;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+
+        @include filtermxn;
+        @include products-gridmxn;
+    }
+}

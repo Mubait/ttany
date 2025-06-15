@@ -1,7 +1,5 @@
-@import "../variables";
-
-@media (max-width: 375px) {
-    .main-block {
+@mixin filtermxn {
+    .filter {
         display: none;
     }
 }
