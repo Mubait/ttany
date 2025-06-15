@@ -16,8 +16,8 @@
               <p class="products-grid-product-price-oldprice"> 5 990 ₽ </p>
             </div>
 
-            <div class="products-grid-product-buybtn">
-              <p class="products-grid-product-buybtn-txt"> Купить </p>
+            <div class="products-grid-product-buybtn" tabindex="0" @click ="buyBtnClick($event)">
+              Купить
             </div>
           </div>
         </div>
@@ -34,6 +34,14 @@ export default {
   name: 'MainBlock',
   components: {
     ProductFilter
-  }
+  },
+  methods: {
+    buyBtnClick(event) {
+      const buyBtn = event.target
+      buyBtn.textContent = "Куплено!"
+      buyBtn.style.border = "1px solid #D5D5D5"
+      buyBtn.style.color = "#AAAAAA"
+    }
+  },
 }
 </script>

@@ -22,6 +22,10 @@
                 background-image: url('/1440/product.svg');
                 background-repeat: no-repeat;
                 background-size: cover;   
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
             }
             .products-grid-product-labels {
                 display: flex;
@@ -54,6 +58,10 @@
                     border: 0;
                     padding: 0;
                     color: $--color-font-main;
+                    &:hover {
+                        color: $--color-font-hover;
+                        cursor: pointer;
+                    }
                 }
             }
             .products-grid-product-price {
@@ -92,22 +100,25 @@
             }
             .products-grid-product-buybtn {
                 display: flex;
-                width: fit-content;
-                height: fit-content;
+                width: 43px;
+                height: 14px;
                 border-radius: 4px;
                 border: 1px solid $--color-brand;
                 padding: 12px 16px;
-                .products-grid-product-buybtn-txt {
-                    width: 43px;
-                    height: 14px;
-                    font-family: PT Sans;
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 14px;
-                    letter-spacing: 0;
-                    vertical-align: middle;
-                    color: $--color-brand;
-                    margin: 0;
+                font-family: PT Sans;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 0;
+                vertical-align: middle;
+                color: $--color-brand;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                &:hover {
+                    background-color: $--color-brand;
+                    cursor: pointer;
+                    color: white;
                 }
             }
         }
