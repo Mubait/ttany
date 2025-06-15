@@ -953,10 +953,11 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0;
-    color: #AAAAAA;
+    color: #333333;
     margin: 0;
     border: 0;
     padding: 0;
+    outline: 0;
   }
   .main-block .filter .checkbox-filter-1 .frame-1152 {
     display: flex;
@@ -1706,10 +1707,11 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0;
-    color: #AAAAAA;
+    color: #333333;
     margin: 0;
     border: 0;
     padding: 0;
+    outline: 0;
   }
   .main-block .filter .checkbox-filter-1 .frame-1152 {
     display: flex;
