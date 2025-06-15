@@ -34,7 +34,7 @@
                     <div class="frame-1140">
                         <img class="arrow-back" src="/mobile/arrow-back.svg" alt="arrow-back">
                         <input class="input-form" type="text" placeholder="Запрос"/>
-                        <img class="cross" src="/mobile/cross.svg" alt="cross">
+                        <div class="cross"></div>
                         <div class="search-btn"> <p class="search-txt"> Найти </p> </div>
                     </div>
                     <div class="frame-1141">

@@ -41,6 +41,16 @@
                         max-width: 100%;
                         height: fit-content;
                         gap: 16px;
+                        &:hover {
+                            + .frame-1141 {
+                            background-color: $--color-font-hover;
+                            }
+                            .cross {
+                            visibility: visible;
+                            opacity: 1;
+                            transition: opacity 0.3s ease;
+                            }
+                        }
                         .arrow-back {
                             width: 20px;
                             height: 20px;
@@ -59,9 +69,15 @@
                             outline: none;
                         }
                         .cross {
+                            visibility: hidden;
                             width: 20px;
                             height: 20px;
                             opacity: 0.3;
+                            background-image: url("/mobile/cross.svg");
+                            &:active {
+                                background-image: url("/mobile/cross-active.svg");
+                                background-size: cover;
+                            }
                         }
                         .search-btn {
                             display: flex;
@@ -72,7 +88,9 @@
                             padding: 12px 16px;
                             gap: 10px;
                             background-color: $--color-brand;
-                            
+                            &:active {
+                                filter: brightness(50%);
+                            }
                             .search-txt {
                                 margin: 0;
                                 width: 43px;

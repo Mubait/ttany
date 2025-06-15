@@ -13,7 +13,7 @@
         margin-bottom: 24px;
         
         .frame-1657 {
-                display: flex;
+            display: flex;
             width: fit-content;
             height: fit-content;
             gap: 8px;
@@ -25,6 +25,10 @@
                 padding-right: 24px;
                 padding-left: 24px;
                 gap: 8px;
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(50%);
+                }
                 .material-symbols-image {
                     width: 24px;
                     height: 24px;
@@ -56,6 +60,10 @@
                 gap: 10px;
                 box-sizing: border-box;
                 align-items: center;
+                &:hover {
+                    border: 1px solid $--color-font-hover;
+                    cursor: pointer;
+                }
                 .catalog {
                     width: 56px;
                     height: 17px;
@@ -78,6 +86,10 @@
             gap: 8px;
             align-items: center;
             box-sizing: border-box;
+            &:hover {
+                border: 1px solid $--color-font-hover;
+                cursor: pointer;
+            }
             .frame-1167 {
                 display: flex;
                 width: 100%;
@@ -116,6 +128,10 @@
                 line-height: 100%;
                 letter-spacing: 0;
                 margin: 0;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
             .contacts {
                 width: 65px;
@@ -126,6 +142,10 @@
                 line-height: 100%;
                 letter-spacing: 0;
                 margin: 0;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
             .useful-links {
                 width: 123px;
@@ -136,6 +156,10 @@
                 line-height: 100%;
                 letter-spacing: 0;
                 margin: 0;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
         }
 
